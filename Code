@@ -1,0 +1,7 @@
+import qrcode
+import matplotlib.pyplot as plt
+data = input()
+filename = "My_QR_code.png"
+image = qrcode.make(data)
+image.save(filename)
+plt.imshow(image,cmap='gray')
